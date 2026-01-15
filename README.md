@@ -1,4 +1,4 @@
-BGU Mart – Supermarket Management System
+BGU Mart - Supermarket Management System
 ========================================
 
 BGU Mart is a Python & SQLite-based application designed to efficiently manage supermarket chains.
@@ -23,7 +23,15 @@ Modules
 | action.py      | Executes sales and supply actions from an action file. |
 | printdb.py     | Prints database tables and generates detailed reports. |
 
-Usage
------
 
-1. Initialize the database:
+Database Schema
+---------------
+
+The system uses a SQLite database bgumart.db with the following tables:
+
+- employees – Employee details: ID, name, salary, branch.
+- suppliers – Supplier information: ID, name, contact.
+- products – Product inventory: ID, description, price, quantity.
+- branches – Branch info: ID, location, number of employees.
+- activities – Sales and supply logs: product, quantity, activator, date.
+
